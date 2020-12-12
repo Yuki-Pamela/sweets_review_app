@@ -1,4 +1,4 @@
-# sweets_review_app
+# Sweets Weview App
 
 Hi everyone!!
 
