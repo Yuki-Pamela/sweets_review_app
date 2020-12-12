@@ -1,4 +1,4 @@
-# Sweets Weview App
+# Sweets Review App
 
 Hi everyone!!
 
