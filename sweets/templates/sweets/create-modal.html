@@ -1,0 +1,40 @@
+<div class="modal fade" id="modal-create">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Create</h5>
+                <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+            </div>
+
+            <div class="modal-body">
+                <form action="{% url 'create' %}" method="post">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label for="sweetName">Name</label>
+                        <input type="text" class="form-control" id="sweetName" placeholder="Enter name" name="name" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sweetPicture">Picture</label>
+                        <input type="text" class="form-control" id="sweetPicture" placeholder="Image URL" name="picture" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sweetRating">Rating</label>
+                        <input type="text" class="form-control" id="sweetRating" placeholder="1-10" name="rating" min="1" max="10" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sweetNotes">Notes</label>
+                        <textarea type="text" class="form-control" id="sweetNotes" placeholder="Add notes" name="notes"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Create new sweet</button>
+
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+</div>
